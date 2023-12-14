@@ -1,35 +1,94 @@
-# Backend Assignment - API
+# Backend Assignment - REST API
 
-This is the README for an Express backend assignment that requires you to implement the REST APIs for a library management system or E-commerce based on the Entity-Relationship Diagram (ERD) assignment. The ERD assignment should outline the data model, including the relationships and attributes of entities within the system. You are tasked with designing and documenting the REST APIs according to the ERD specifications.
+Within this assignment the REST API for an e-commerce website is implemented according to the Entity-Relationship Diagram outlining the data model including the relationships and attributes of collections within the system.
 
-## Introduction
+## Contents
 
-This Express backend assignment involves building a RESTful API for a library management system or E-commerce. You are provided with an Entity-Relationship Diagram (ERD) assignment that outlines the data model, including the relationships and attributes of entities such as books, users, authors, and admin roles.
+- [Team](#team)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [ER Diagram](#er-diagram)
+- [Project Features](#project-features)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
 
-## Entity CRUD Operations
+## Team
 
-`Before` implementing JWT authentication, `you are required to create the basic CRUD` (Create, Read, Update, Delete) operations for the entities based on the specifications provided in the ERD assignment. This section focuses on designing and implementing the core functionality to manage and interact with the specified entities.
+- Shtanko Yaroslav
+- Md Shayemur Rahman
+- Amjad Shakhshir
+- Alexey Sytnikov
 
-## Authentication
+## Technologies
 
-For security, this API should implement user authentication using JSON Web Tokens (JWT). Each user should have a unique username and password OR broker authentication. Certain admin endpoints may require special privileges for access.
+![Typescript](https://img.shields.io/badge/Typescript-4.9.5-blue)
+![NodeJS](https://img.shields.io/badge/NodeJS-20.10.0-purple)
+![ExpressJS](https://img.shields.io/badge/ExpressJS-4.18.2-red)
+![Mongoose](https://img.shields.io/badge/Momgoose-8.0.0-yellow)
 
-## Minimum requirements
+## Getting started
 
-Please check the REST API slides where you can find the minimum requirements of the project.
+- Clone the project `git clone https://github.com/sytnikov/fs16-backend-public.git`;
+- Create your `.env` file using `.env.example` file as an exaple and fill it with your credentials;
+- Use `npm install` to install all dependencies and necessary packages;
+- Run the server using `npm run sever`.
 
-## Response Format
+## ER Diagram
 
-All API responses should be provided in JSON format. A typical response should include a `status`, `data`, and an optional `message` field. The `status` field should indicate the success or failure of the request.
+Within the project, the following entities are covered: users, products, categories, orders, roles, payments, and shipments.
+![er-diagram](Database-ER-diagram.png)
 
-## Error Handling
+## Project Features
 
-The API should include comprehensive error handling with clear and informative error messages. Errors should be accompanied by appropriate HTTP status codes.
+### Entity CRUD Operations
+
+Based on the specifications provided in the ERD assignment the basic CRUD (Create, Read, Update, Delete) operations for the entities are implemented.
+
+### Authentication and authorization
+
+For security resons, certain endpoint are protected with the following middleware:
+
+- checkAuth: verifying is a user is logged in. There are two ways of authentication implemented: using JWT and brokered authentication with Google;
+- checkRole: verifying if a user is a customer or and admin;
+- checkPermissions: verifying if an admin has a particular access
+
+### Response Format
+
+All API responses are provided in JSON format which includes a `status`, `data`, and an optional `message` field.
+
+### Error Handling
+
+To handle API errors, the apiErrorHandler is implemented.
+
+## Project Structure
+
+Below is the high-level project folder structure represented.
+
+```
+ .
+ ├── server
+ |  ├── controllers
+ |  ├── middlewares
+ |  ├── models
+ |  ├── routes
+ |  ├── schemas
+ |  ├── services
+ |  ├── test
+ |  ├── types
+ |  ├── utils
+ |  ├── app.ts
+ |  ├── server.ts
+ ├── .env.example
+ ├── .gitignore
+ ├── package.json
+ ├── Database-ER-diagram.png
+ ├── README.md
+ ├── jest.config.ts
+ └── tsconfig.json
+```
 
 ## Testing
 
-Developers should conduct unit tests and integration tests to ensure the reliability and correctness of the API. Instructions for running the tests should be provided in the project's documentation.
+The test cases for all the key Services and Controllers have been built with Jest testing library. In this porject, unit testing and integration testing approaches were used. The test requests are sent to the built mock server, not the real API.
 
-## Deployment
-
-The API should be deployed before the **`DEADLINE`** which is end of Week 47 24th of Nov
+Run `npm run test` to implement all the tests.
