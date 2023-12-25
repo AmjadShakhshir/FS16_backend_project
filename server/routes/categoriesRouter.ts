@@ -23,16 +23,16 @@ categoriesRouter.post(
 categoriesRouter.put(
   "/:categoryId",
   validate(categorySchema),
-  // checkAuth,
-  // checkRoles(ROLE.ADMIN),
-  // checkPermission("UPDATE"),
+  checkAuth,
+  checkRoles(ROLE.ADMIN),
+  checkPermission("UPDATE"),
   controller.updateCategory
 );
 categoriesRouter.delete(
   "/:categoryId",
-  // checkAuth,
-  // checkRoles(ROLE.ADMIN),
-  // checkPermission("DELETE"),
+  checkAuth,
+  checkRoles(ROLE.ADMIN),
+  checkPermission("DELETE"),
   controller.deleteCategory
 );
 

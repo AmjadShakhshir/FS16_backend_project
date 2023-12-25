@@ -75,7 +75,10 @@ async function logIn(email: string, password: string) {
     expiresIn: "1h",
   });
 
-  return accessToken;
+  return {
+    accessToken,
+    email: foundUser.email
+  };
 }
 
 async function googleLogin(user: User) {
