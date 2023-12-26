@@ -23,7 +23,11 @@ const getAllOrderItems = async () => {
 
 const getSingleOrder = async (orderId: string) => {
   const id = new mongoose.Types.ObjectId(orderId);
-  return await OrderRepo.findOne({ _id: id }).exec();
+  return await OrderRepo.findOne({ _id: id })
+  .populate("userId")
+  .populate("paymentId")
+  .populate("shipmentId")
+  .exec();
 };
 
 const addOrder = async (createData: OrderDto) => {

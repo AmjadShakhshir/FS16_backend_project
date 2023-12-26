@@ -58,7 +58,9 @@ const removeOne = async (paymentId: string) => {
 };
 
 const findOne = async (paymentId: string) => {
-  return await PaymentRepo.findById(paymentId);
+  return await PaymentRepo.findById(paymentId)
+  .populate("userId")
+  .populate("orderId");
 };
 
 const findAll = async () => {

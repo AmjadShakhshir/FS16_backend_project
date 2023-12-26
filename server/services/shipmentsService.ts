@@ -12,7 +12,9 @@ async function findAll() {
 
 async function getOne(index: string) {
   const id = new mongoose.Types.ObjectId(index);
-  const existedShipment = await ShipmentRepo.findOne({ _id: id }).exec();
+  const existedShipment = await ShipmentRepo.findOne({ _id: id })
+  .populate("userId")
+  .exec();
   return existedShipment;
 }
 
