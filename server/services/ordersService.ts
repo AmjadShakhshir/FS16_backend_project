@@ -5,7 +5,6 @@ import OrderRepo from "../models/OrderModel";
 import UserRepo from "../models/UserModel";
 import OrderItemRepo from "../models/OrderItemModel";
 import { OrderDto, UpdateOrderInput, newOrderData } from "../types/Order";
-import { populate } from "dotenv";
 
 const getOrders = async () => {
   return await OrderRepo.find()
