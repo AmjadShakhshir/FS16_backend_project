@@ -62,6 +62,9 @@ const findOne = async (paymentId: string) => {
 };
 
 const findAll = async () => {
-  return await PaymentRepo.find().exec();
+  return await PaymentRepo.find()
+  .populate("userId")
+  .populate("orderId")
+  .exec();
 };
 export default { createOne, removeOne, findOne, findAll };

@@ -21,7 +21,9 @@ const createOne = async (newProduct: CreateProductInput) => {
 };
 
 const findAll = async () => {
-  return await ProductRepo.find().exec();
+  return await ProductRepo.find()
+  .populate("categoryId")
+  .exec();
 };
 
 const removeOne = async (productId: string) => {

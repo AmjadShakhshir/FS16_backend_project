@@ -4,7 +4,9 @@ import ShipmentRepo from "../models/ShipmentModel";
 import { CreateShipmetInput, shipmentUpdate } from "../types/Shipment";
 
 async function findAll() {
-  const shipments = await ShipmentRepo.find().exec();
+  const shipments = await ShipmentRepo.find()
+  .populate("userId")
+  .exec();
   return shipments;
 }
 

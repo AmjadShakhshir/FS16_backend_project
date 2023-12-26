@@ -5,13 +5,21 @@ import OrderRepo from "../models/OrderModel";
 import UserRepo from "../models/UserModel";
 import OrderItemRepo from "../models/OrderItemModel";
 import { OrderDto, UpdateOrderInput, newOrderData } from "../types/Order";
+import { populate } from "dotenv";
 
 const getOrders = async () => {
-  return await OrderRepo.find().exec();
+  return await OrderRepo.find()
+  .populate("userId")
+  .populate("paymentId")
+  .populate("shipmentId")
+  .exec();
 };
 
 const getAllOrderItems = async () => {
-  return await OrderItemRepo.find().exec();
+  return await OrderItemRepo.find()
+  .populate("orderId")
+  .populate("productId")
+  .exec();
 };
 
 const getSingleOrder = async (orderId: string) => {

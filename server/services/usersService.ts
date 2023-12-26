@@ -6,7 +6,9 @@ import RoleRepo from "../models/RoleModel";
 import { CreateUserInput, User, UserUpdate } from "../types/User";
 
 async function findAll() {
-  const users = await UserRepo.find().exec();
+  const users = await UserRepo.find()
+  .populate("roleId")
+  .exec();
   return users;
 }
 
@@ -77,7 +79,7 @@ async function logIn(email: string, password: string) {
 
   return {
     accessToken,
-    email: foundUser.email
+    user: foundRole
   };
 }
 
