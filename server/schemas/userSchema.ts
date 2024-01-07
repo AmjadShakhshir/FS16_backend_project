@@ -23,7 +23,7 @@ export const userBodySchema = z.object({
     .refine((val) => mongoose.Types.ObjectId.isValid(val))
     .optional(),
     logInWithGoogle: z.boolean().optional(),
-
+    avatar: z.string().optional(),
 })
 .strict();
 
@@ -32,6 +32,7 @@ export const updatedUserBodySchema = z.object({
         email: z.string().email().optional(),
         password: z.string().min(6).max(20).optional(),
         roleId: z.string().refine((val) => mongoose.Types.ObjectId.isValid(val)).optional(),
+        avatar: z.string().optional(),
 }).partial().strict();
 
 export const userSchema = z.object({

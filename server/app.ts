@@ -13,8 +13,13 @@ import { loggingMiddleware } from "./middlewares/logging";
 import { apiErrorHandler } from "./middlewares/apiErrorHandler";
 import { routeNotFound } from "./middlewares/routeNotFound";
 import { authWithGoogle } from "./middlewares/authWithGoogle";
+import Stripe from "stripe";
 
 const app = express();
+const stripe = new Stripe(process.env.STRIPE_KEY!, {
+    apiVersion: "2023-10-16",
+});
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(passport.initialize());

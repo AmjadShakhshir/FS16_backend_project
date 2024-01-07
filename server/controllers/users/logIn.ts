@@ -4,10 +4,10 @@ import { ApiError } from "../../middlewares/errors/ApiError";
 
 export async function logIn(req: Request, res: Response, next: NextFunction) {
   const {email, password} = req.body
-  const accessToken = await usersService.logIn(email, password)
-  if (accessToken === null) {
+  const loggedInUser = await usersService.logIn(email, password)
+  if (loggedInUser === null) {
     next(ApiError.forbidden("Email or password is invalid"))
     return
   }
-  res.status(200).json(accessToken);
+  res.status(200).json(loggedInUser);
 }

@@ -17,9 +17,8 @@ usersRouter.get(
   usersController.getAllUsers
 );
 usersRouter.get(
-  "/:userId",
+  "/profile/:userId",
   checkAuth,
-  checkRoles(ROLE.ADMIN),
   checkPermission("READ"),
   usersController.getSingleUser
 );
@@ -43,9 +42,9 @@ usersRouter.put(
 );
 usersRouter.delete(
   "/:userId",
-  // checkAuth,
-  // checkRoles(ROLE.ADMIN),
-  // checkPermission("DELETE"),
+  checkAuth,
+  checkRoles(ROLE.ADMIN),
+  checkPermission("DELETE"),
   usersController.deleteUser
 );
 usersRouter.post("/signup", emailChecker, usersController.signUp);

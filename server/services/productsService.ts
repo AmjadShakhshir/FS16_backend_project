@@ -10,12 +10,12 @@ import {
 import { ProductQueries } from "../types/ProductQueries";
 
 const createOne = async (newProduct: CreateProductInput) => {
-  // const category: Category | null = await CategoryRepo.findOne({
-  //   _id: newProduct.categoryId,
-  // });
-  // if (!category) {
-  //   return null;
-  // }
+  const category: Category | null = await CategoryRepo.findOne({
+    _id: newProduct.categoryId,
+  });
+  if (!category) {
+    return null;
+  }
   const product = new ProductRepo(newProduct);
   return await product.save();
 };
