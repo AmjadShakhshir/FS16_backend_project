@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 import OrderRepo from "../models/OrderModel";
 import PaymentRepo from "../models/PaymentModel";
 import UserRepo from "../models/UserModel";
@@ -69,4 +70,5 @@ const findAll = async () => {
   .populate("orderId")
   .exec();
 };
-export default { createOne, removeOne, findOne, findAll };
+
+export default {removeOne, findOne, findAll, createOne };

@@ -9,12 +9,20 @@ import { ROLE } from "../utils/role";
 import { checkPermission } from "../middlewares/checkPermissions";
 
 const router = express.Router();
+
 router.get(
   "/",
   checkAuth,
   checkRoles(ROLE.ADMIN, ROLE.USER),
   checkPermission("READ"),
   ctrl.getAllPayments
+);
+router.get(
+  "/:paymentId",
+  checkAuth,
+  checkRoles(ROLE.ADMIN, ROLE.USER),
+  checkPermission("READ"),
+  ctrl.getPayment
 );
 router.post(
   "/",
@@ -23,13 +31,6 @@ router.post(
   checkRoles(ROLE.ADMIN, ROLE.USER),
   checkPermission("CREATE"),
   ctrl.addPayment
-);
-router.get(
-  "/:paymentId",
-  checkAuth,
-  checkRoles(ROLE.ADMIN, ROLE.USER),
-  checkPermission("READ"),
-  ctrl.getPayment
 );
 router.delete("/:paymentId", checkAuth, ctrl.removePayment);
 

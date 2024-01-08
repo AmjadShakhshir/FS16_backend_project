@@ -7,5 +7,5 @@ export default {
   addPayment,
   removePayment,
   getPayment,
-  getAllPayments,
+  getAllPayments
 };
