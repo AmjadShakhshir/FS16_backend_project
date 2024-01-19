@@ -6,7 +6,10 @@ import { validate } from "../middlewares/validate";
 
 const checkoutRouter = express.Router()
 
-checkoutRouter.post("/", validate(newOrderSchema), createOrder)
+checkoutRouter.post(
+    "/",
+    validate(newOrderSchema),
+    createOrder)
 
 
 export default checkoutRouter
