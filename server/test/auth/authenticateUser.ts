@@ -17,7 +17,7 @@ export async function authenticateUser() {
     roleId: role._id.toString(),
   };
 
-  await request(app).post("/users/signup").send(user);
+  await request(app).post("/users").send(user);
   const loginResponse = await request(app)
     .post("/users/login")
     .send({ email: "test1234@mail.com", password: "123456" });
