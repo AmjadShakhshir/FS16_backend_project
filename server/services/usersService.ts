@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import UserRepo from "../models/UserModel";
 import RoleRepo from "../models/RoleModel";
-import { CreateUserInput, User, UserUpdate } from "../types/User";
+import { User, UserUpdate } from "../types/User";
 
 async function findAll() {
   const users = await UserRepo.find()
@@ -46,8 +46,8 @@ async function signUp(
   if (!foundRole) {
     return null;
   }
-  const newUser = { name, email, roleId: foundRole.name };
-  return newUser;
+    
+  return user;
 }
 
 async function logIn(email: string, password: string) {
