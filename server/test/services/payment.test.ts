@@ -38,10 +38,10 @@ describe("Payment service", () => {
       password: "1234567",
     };
     const user = await UserService.signUp(bodyUser);
-
-    if (!user?._id) {
+    if (!user) {
       return;
     }
+    console.log(user._id.toString());
     const bodyOrder: newOrderData = {
       userId: user._id.toString(),
       products: [{ productId: productOne._id, quantity: 1 }],

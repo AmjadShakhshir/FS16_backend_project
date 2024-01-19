@@ -41,7 +41,6 @@ async function signUp( user: CreateUserInput) {
   if (!foundRole) {
     return null;
   }
-    
   return newUser;
 }
 
