@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import UserRepo from "../models/UserModel";
 import RoleRepo from "../models/RoleModel";
-import { User, UserUpdate } from "../types/User";
+import { CreateUserInput, User, UserUpdate } from "../types/User";
 
 async function findAll() {
   const users = await UserRepo.find()
@@ -33,21 +33,16 @@ async function deleteUser(index: string) {
   return deletedUser;
 }
 
-async function signUp(
-  name: string,
-  email: string,
-  password: string,
-  roleId: string
-) {
-  const hashedPassword = bcrypt.hashSync(password, 10);
-  const user = new UserRepo({ name, email, roleId, password: hashedPassword });
-  await user.save();
+async function signUp( user: CreateUserInput) {
+  const hashedPassword = bcrypt.hashSync(user.password, 10);
+  const newUser = new UserRepo({ ...user, password: hashedPassword });
+  await newUser.save();
   const foundRole = await RoleRepo.findById({ _id: user.roleId });
   if (!foundRole) {
     return null;
   }
     
-  return user;
+  return newUser;
 }
 
 async function logIn(email: string, password: string) {

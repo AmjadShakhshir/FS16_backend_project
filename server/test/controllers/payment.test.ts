@@ -32,12 +32,7 @@ async function createOrderWithPayment() {
     email: "te112@gmail.com",
     password: "1234567",
   };
-  const user = await UserService.signUp(
-    bodyUser.name,
-    bodyUser.email,
-    bodyUser.password,
-    "user"
-  );
+  const user = await UserService.signUp(bodyUser);
 
   if (!user?._id) {
     return;

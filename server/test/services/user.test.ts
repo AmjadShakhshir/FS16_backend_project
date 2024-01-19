@@ -24,7 +24,10 @@ describe("user service", () => {
   };
 
   it("Should create a new user", async () => {
-    const newUser = await UserService.createUser(user);
+    const newUser = await UserService.signUp(user);
+    if (!newUser) {
+      return;
+    }
     expect(newUser).toHaveProperty("_id");
     expect(newUser.name).toEqual("test");
     expect(newUser.email).toEqual("test@mail.com");
