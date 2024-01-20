@@ -1,4 +1,6 @@
 import connect, { MongoHelper } from "../db-helper";
+import bcrypt from "bcrypt";
+
 import UserService from "../../services/usersService";
 import UserRepo from "../../models/UserModel";
 
@@ -31,7 +33,9 @@ describe("user service", () => {
     expect(newUser).toHaveProperty("_id");
     expect(newUser.name).toEqual("test");
     expect(newUser.email).toEqual("test@mail.com");
-    expect(newUser.password).toEqual("123456");
+    // Check if the password was hashed correctly
+    const isPasswordMatch = newUser.password ? await bcrypt.compare(user.password, newUser.password) : false;
+    expect(isPasswordMatch).toBe(true);
   });
 
   it("Should return a list of users", async () => {

@@ -68,7 +68,7 @@ async function createOrderWithPayment() {
 
 describe("Payment controller", () => {
   let mongoHelper: MongoHelper;
-  let accessToken: string;
+  let accessToken: { accessToken: string };
 
   beforeEach(async () => {
     accessToken = await authenticateUser();
@@ -91,7 +91,8 @@ describe("Payment controller", () => {
     const response = await request(app)
       .post("/payments")
       .send(bodyPayment)
-      .set("Authorization", `Bearer ${accessToken}`);
+      .set("Authorization", `Bearer ${accessToken.accessToken}`);
+    expect(response.status).toBe(201);
     expect(response.body.payment[0].bankName).toEqual("OTP");
     expect(response.body.message).toEqual("Payment is created");
     expect(response.body.payment[0].userId).toEqual(bodyPayment?.userId);
@@ -107,6 +108,6 @@ describe("Payment controller", () => {
     console.log("-----------------", newPayment._id);
     const response = await request(app)
       .delete(`/payments/${newPayment._id}`)
-      .set("Authorization", `Bearer ${accessToken}`);
+      .set("Authorization", `Bearer ${accessToken.accessToken}`);
   });
 });

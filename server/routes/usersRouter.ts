@@ -38,7 +38,7 @@ usersRouter.delete(
   checkPermission("DELETE"),
   usersController.deleteUser
 );
-usersRouter.post("/",emailChecker, usersController.signUp);
+usersRouter.post("/signup",emailChecker, usersController.signUp);
 usersRouter.post("/login", usersController.logIn);
 usersRouter.post(
   "/login-google",
