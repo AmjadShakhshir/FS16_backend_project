@@ -8,8 +8,8 @@ import { validate } from '../middlewares/validate';
 import { orderSchema } from '../schemas/orderSchema';
 import { checkAuth } from '../middlewares/checkAuth';
 import { checkPermission } from '../middlewares/checkPermissions';
-import { checkRoles } from '../middlewares/checkRoles';
 import { ROLE } from '../utils/role';
+import { checkRoles } from '../middlewares/checkRoles';
 
 const ordersRouter = Router();
 

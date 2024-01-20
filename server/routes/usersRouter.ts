@@ -22,15 +22,6 @@ usersRouter.get(
   checkPermission("READ"),
   usersController.getSingleUser
 );
-usersRouter.post(
-  "/",
-  validate(userSchema),
-  emailChecker,
-  checkAuth,
-  checkRoles(ROLE.ADMIN),
-  checkPermission("CREATE"),
-  usersController.createUser
-);
 usersRouter.put(
   "/:userId",
   validate(updateUserSchema),
@@ -47,7 +38,7 @@ usersRouter.delete(
   checkPermission("DELETE"),
   usersController.deleteUser
 );
-usersRouter.post("/signup", emailChecker, usersController.signUp);
+usersRouter.post("/",emailChecker, usersController.signUp);
 usersRouter.post("/login", usersController.logIn);
 usersRouter.post(
   "/login-google",

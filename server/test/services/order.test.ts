@@ -30,10 +30,15 @@ export async function createOrder() {
     stock: 12,
   });
   await iphoneProduct.save();
-  const user = await usersService.createUser(bodyUser);
+  const user = await usersService.signUp(bodyUser);
   if (!iphoneProduct?._id) {
     return;
   }
+
+  if (!user?._id) {
+    return;
+  }
+  
   const bodyOrder: newOrderData = {
     userId: user._id.toString(),
     products: [

@@ -5,6 +5,17 @@ import UserRepo from "../models/UserModel";
 import RoleRepo from "../models/RoleModel";
 import { CreateUserInput, User, UserUpdate } from "../types/User";
 
+async function createUser(user: CreateUserInput) {
+  const hashedPassword = bcrypt.hashSync(user.password, 10);
+  const newUser = new UserRepo({ ...user, password: hashedPassword });
+  await newUser.save();
+  const foundRole = await RoleRepo.findById({ _id: user.roleId });
+  if (!foundRole) {
+    return null;
+  }
+  return newUser;
+}
+
 async function findAll() {
   const users = await UserRepo.find()
   .populate("roleId")
@@ -19,13 +30,9 @@ async function getSingleUser(index: string) {
   return user;
 }
 
-async function createUser(user: CreateUserInput) {
-  const newUser = new UserRepo(user);
-  await newUser.save();
-  return newUser;
-}
-
 async function updateUser(index: string, user: UserUpdate) {
+  const hashedPassword = user.password ? bcrypt.hashSync(user.password, 10) : undefined;
+  user.password = hashedPassword;
   const updatedUser = await UserRepo.findOneAndUpdate({ _id: index }, user, {
     new: true,
   });
@@ -37,20 +44,14 @@ async function deleteUser(index: string) {
   return deletedUser;
 }
 
-async function signUp(
-  name: string,
-  email: string,
-  password: string,
-  roleId: string
-) {
-  const hashedPassword = bcrypt.hashSync(password, 10);
-  const user = new UserRepo({ name, email, roleId, password: hashedPassword });
-  await user.save();
+async function signUp( user: CreateUserInput) {
+  const hashedPassword = bcrypt.hashSync(user.password, 10);
+  const newUser = new UserRepo({ ...user, password: hashedPassword });
+  await newUser.save();
   const foundRole = await RoleRepo.findById({ _id: user.roleId });
   if (!foundRole) {
     return null;
   }
-  const newUser = { name, email, roleId: foundRole.name };
   return newUser;
 }
 
@@ -103,10 +104,10 @@ async function googleLogin(user: User) {
 export default {
   findAll,
   getSingleUser,
-  createUser,
   updateUser,
   deleteUser,
   signUp,
   logIn,
   googleLogin,
+  createUser
 };
