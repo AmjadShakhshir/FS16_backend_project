@@ -5,17 +5,6 @@ import UserRepo from "../models/UserModel";
 import RoleRepo from "../models/RoleModel";
 import { CreateUserInput, User, UserUpdate } from "../types/User";
 
-async function createUser(user: CreateUserInput) {
-  const hashedPassword = bcrypt.hashSync(user.password, 10);
-  const newUser = new UserRepo({ ...user, password: hashedPassword });
-  await newUser.save();
-  const foundRole = await RoleRepo.findById({ _id: user.roleId });
-  if (!foundRole) {
-    return null;
-  }
-  return newUser;
-}
-
 async function findAll() {
   const users = await UserRepo.find()
   .populate("roleId")
@@ -109,5 +98,4 @@ export default {
   signUp,
   logIn,
   googleLogin,
-  createUser
 };
