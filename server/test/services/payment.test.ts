@@ -36,14 +36,19 @@ describe("Payment service", () => {
       name: "Sirko",
       email: "te112@gmail.com",
       password: "1234567",
+      roleId: "6554c883ab8e8fbcc83c643a",
     };
     const user = await UserService.signUp(bodyUser);
     if (!user) {
       return;
     }
-    console.log(user._id.toString());
+
+    const findUser = await UserService.getSingleUser(user._id.toString());
+    if (!findUser) {
+      return;
+    }
     const bodyOrder: newOrderData = {
-      userId: user._id.toString(),
+      userId: findUser._id.toString(),
       products: [{ productId: productOne._id, quantity: 1 }],
     };
     const order = await OrderService.createOrder(bodyOrder);
@@ -52,7 +57,7 @@ describe("Payment service", () => {
     }
     bodyPayment = {
       method: "paypal",
-      userId: user._id.toString(),
+      userId: findUser._id.toString(),
       ordersId: [order._id.toString()],
       bankName: "OTP",
       accountNumber: "sdfdsfdsf",

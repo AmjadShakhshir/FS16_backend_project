@@ -37,10 +37,6 @@ async function signUp( user: CreateUserInput) {
   const hashedPassword = bcrypt.hashSync(user.password, 10);
   const newUser = new UserRepo({ ...user, password: hashedPassword });
   await newUser.save();
-  const foundRole = await RoleRepo.findById({ _id: user.roleId });
-  if (!foundRole) {
-    return null;
-  }
   return newUser;
 }
 
