@@ -8,7 +8,24 @@ export function checkAuth(
   _: Response,
   next: NextFunction
 ) {
-  const token = req.headers.authorization?.split(" ")[1];
+  const authHeader = req.headers.authorization;
+  
+  if (!authHeader) {
+    console.error('Authorization header is not found');
+    next(ApiError.forbidden("Authorization header is not found"));
+    return;
+  }
+
+  const parts = authHeader.split(" ");
+  
+  if (parts.length !== 2 || parts[0] !== 'Bearer') {
+    console.error('Authorization header is not in Bearer <token> format');
+    next(ApiError.forbidden("Authorization header is not in Bearer <token> format"));
+    return;
+  }
+
+  const token = parts[1];
+  
   if (!token) {
     next(ApiError.forbidden("Token is not found"));
     return;

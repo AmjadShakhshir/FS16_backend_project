@@ -15,7 +15,11 @@ export async function getSingleUser(
       next(ApiError.resourceNotFound("User not found"));
       return;
     }
-    res.status(200).json({ user });
+    res.status(200).json({ user: {
+      name: user.name,
+      email: user.email,
+      avatar: user.avatar,
+    }});
   } catch (error) {
     next(ApiError.resourceNotFound("Cannot find single user"));
   }

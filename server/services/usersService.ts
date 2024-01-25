@@ -42,7 +42,6 @@ async function signUp( user: CreateUserInput) {
 
 async function logIn(email: string, password: string) {
   const foundUser = await UserRepo.findOne({ email: email });
-
   if (!foundUser || !foundUser.password) {
     return null;
   }
@@ -66,7 +65,6 @@ async function logIn(email: string, password: string) {
   const accessToken = jwt.sign(payload, process.env.TOKEN_SECRET as string, {
     expiresIn: "1h",
   });
-
   const loggedInUser = {...payload, accessToken}
   return loggedInUser;
 }

@@ -8,9 +8,13 @@ const ShipmentSchema = new Schema(
       type: Schema.Types.ObjectId,
       ref: "User",
     },
-    address: {
+    street1: {
       type: String,
       required: true,
+    },
+    street2: {
+      type: String,
+      required: false,
     },
     shippingPrice: {
       type: Number,
@@ -21,7 +25,7 @@ const ShipmentSchema = new Schema(
       type: String,
       required: true,
     },
-    postalCode: {
+    zipCode: {
       type: String,
       required: true,
     },

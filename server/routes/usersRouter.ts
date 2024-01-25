@@ -19,7 +19,6 @@ usersRouter.get(
 usersRouter.get(
   "/profile/:userId",
   checkAuth,
-  checkPermission("READ"),
   usersController.getSingleUser
 );
 usersRouter.put(
