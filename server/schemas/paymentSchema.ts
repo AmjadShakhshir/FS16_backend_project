@@ -6,9 +6,7 @@ export const paymentBodySchema = z
   .object({
     userId: z.string().refine((val) => mongoose.Types.ObjectId.isValid(val)),
     method: z.enum(["credit_card", "bank_transfer", "paypal"]),
-    ordersId: z.array(
-      z.string().refine((val) => mongoose.Types.ObjectId.isValid(val))
-    ),
+
     bankName: z.string({
       required_error: "BankName  is required",
     }),
@@ -16,6 +14,9 @@ export const paymentBodySchema = z
       required_error: "AccountNumber  is required",
     }),
     shipmentInfo: shipmentBodySchema,
+    amount: z.number({
+      required_error: "Amount  is required",
+    }),
   })
   .strict();
 

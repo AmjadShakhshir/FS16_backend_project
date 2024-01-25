@@ -10,7 +10,7 @@ export const addPayment = async (
 ) => {
   const newPayment = req.body;
   const payment = await paymentsService.createOne(newPayment);
-  if (payment === null || payment.length === 0) {
+  if (payment === null) {
     next(ApiError.badRequest("Payment not created"));
     return;
   }

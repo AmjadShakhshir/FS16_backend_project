@@ -9,11 +9,6 @@ const PaymentSchema = new Schema(
       enum: ["credit_card", "bank_transfer", "paypal"],
       required: true,
     },
-    orderId: {
-      type: Schema.Types.ObjectId,
-      ref: "Order",
-      required: true,
-    },
     userId: {
       type: Schema.Types.ObjectId,
       ref: "User",
