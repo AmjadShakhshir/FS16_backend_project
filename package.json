@@ -21,6 +21,7 @@
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.1",
+    "nodemon": "^3.0.3",
     "passport": "^0.6.0",
     "passport-google-id-token": "^0.4.7",
     "stripe": "^14.11.0",
