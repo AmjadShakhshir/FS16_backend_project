@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var products_1 = require("../controllers/products");
+var validate_1 = require("../middlewares/validate");
+var productSchema_1 = require("../schemas/productSchema");
+var controlWrapper_1 = require("../middlewares/controlWrapper");
+var checkAuth_1 = require("../middlewares/checkAuth");
+var checkRoles_1 = require("../middlewares/checkRoles");
+var role_1 = require("../utils/role");
+var checkPermissions_1 = require("../middlewares/checkPermissions");
+var router = express_1.default.Router();
+router.get("/", (0, controlWrapper_1.controlWrapper)(products_1.default.getAllProducts));
+router.get("/:productId", (0, controlWrapper_1.controlWrapper)(products_1.default.getProduct));
+router.post("/", (0, validate_1.validate)(productSchema_1.productSchema), checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN), (0, checkPermissions_1.checkPermission)("CREATE"), (0, controlWrapper_1.controlWrapper)(products_1.default.addProduct));
+router.delete("/:productId", checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN), (0, checkPermissions_1.checkPermission)("DELETE"), (0, controlWrapper_1.controlWrapper)(products_1.default.deleteProduct));
+router.put("/:productId", checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN), (0, checkPermissions_1.checkPermission)("UPDATE"), (0, validate_1.validate)(productSchema_1.uptadeProductSchema), (0, controlWrapper_1.controlWrapper)(products_1.default.updateProduct));
+exports.default = router;

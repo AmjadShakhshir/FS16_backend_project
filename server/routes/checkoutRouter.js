@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var createOrder_1 = require("../controllers/checkout/createOrder");
+var orderSchema_1 = require("../schemas/orderSchema");
+var validate_1 = require("../middlewares/validate");
+var checkAuth_1 = require("../middlewares/checkAuth");
+var checkoutRouter = express_1.default.Router();
+checkoutRouter.post("/", (0, validate_1.validate)(orderSchema_1.newOrderSchema), checkAuth_1.checkAuth, createOrder_1.createOrder);
+exports.default = checkoutRouter;

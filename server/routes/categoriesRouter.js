@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var categories_1 = require("../controllers/categories");
+var validate_1 = require("../middlewares/validate");
+var categorySchema_1 = require("../schemas/categorySchema");
+var checkAuth_1 = require("../middlewares/checkAuth");
+var role_1 = require("../utils/role");
+var checkRoles_1 = require("../middlewares/checkRoles");
+var checkPermissions_1 = require("../middlewares/checkPermissions");
+var categoriesRouter = express_1.default.Router();
+categoriesRouter.get("/", categories_1.default.getAllCategories);
+categoriesRouter.get("/:categoryId", categories_1.default.getSingleCategory);
+categoriesRouter.post("/", (0, validate_1.validate)(categorySchema_1.categorySchema), checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN), (0, checkPermissions_1.checkPermission)("CREATE"), categories_1.default.createCategory);
+categoriesRouter.put("/:categoryId", (0, validate_1.validate)(categorySchema_1.categorySchema), checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN), (0, checkPermissions_1.checkPermission)("UPDATE"), categories_1.default.updateCategory);
+categoriesRouter.delete("/:categoryId", checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN), (0, checkPermissions_1.checkPermission)("DELETE"), categories_1.default.deleteCategory);
+exports.default = categoriesRouter;

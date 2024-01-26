@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var payments_1 = require("../controllers/payments");
+var validate_1 = require("../middlewares/validate");
+var paymentSchema_1 = require("../schemas/paymentSchema");
+var checkAuth_1 = require("../middlewares/checkAuth");
+var checkRoles_1 = require("../middlewares/checkRoles");
+var role_1 = require("../utils/role");
+var checkPermissions_1 = require("../middlewares/checkPermissions");
+var router = express_1.default.Router();
+router.get("/", checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN, role_1.ROLE.USER), (0, checkPermissions_1.checkPermission)("READ"), payments_1.default.getAllPayments);
+router.get("/:paymentId", checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN, role_1.ROLE.USER), (0, checkPermissions_1.checkPermission)("READ"), payments_1.default.getPayment);
+router.post("/", (0, validate_1.validate)(paymentSchema_1.paymentSchema), checkAuth_1.checkAuth, (0, checkRoles_1.checkRoles)(role_1.ROLE.ADMIN, role_1.ROLE.USER), (0, checkPermissions_1.checkPermission)("CREATE"), payments_1.default.addPayment);
+router.delete("/:paymentId", checkAuth_1.checkAuth, payments_1.default.removePayment);
+exports.default = router;
