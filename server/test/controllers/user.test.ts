@@ -82,7 +82,11 @@ describe("User controller", () => {
     const response = await request(app)
       .get(`/users/profile/${newUser._id}`)
       .set("Authorization", `Bearer ${accessToken.accessToken}`);
-    expect(response.body.user).toMatchObject(user);
+    expect(response.body.user).toMatchObject({
+      avatar: expect.any(String),
+      email: user.email,
+      name: user.name,
+    });
     expect(response.status).toBe(200);
   });
 

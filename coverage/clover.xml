@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1700914117775" clover="3.2.0">
-  <project timestamp="1700914117775" name="All files">
-    <metrics statements="759" coveredstatements="547" conditionals="80" coveredconditionals="24" methods="136" coveredmethods="85" elements="975" coveredelements="656" complexity="0" loc="759" ncloc="759" packages="15" files="70" classes="70"/>
+<coverage generated="1706239548728" clover="3.2.0">
+  <project timestamp="1706239548728" name="All files">
+    <metrics statements="821" coveredstatements="633" conditionals="92" coveredconditionals="38" methods="137" coveredmethods="93" elements="1050" coveredelements="764" complexity="0" loc="821" ncloc="821" packages="17" files="74" classes="74"/>
     <package name="server">
-      <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="app.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/app.ts">
-        <metrics statements="28" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="app.ts" path="/Users/amjadshakhshir/fs16-backend/server/app.ts">
+        <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
@@ -19,26 +19,28 @@
         <line num="12" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
         <line num="19" count="4" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
         <line num="22" count="4" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
         <line num="25" count="4" type="stmt"/>
         <line num="26" count="4" type="stmt"/>
         <line num="27" count="4" type="stmt"/>
         <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
         <line num="30" count="4" type="stmt"/>
         <line num="31" count="4" type="stmt"/>
         <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
       </file>
     </package>
     <package name="server.controllers.categories">
       <metrics statements="60" coveredstatements="46" conditionals="7" coveredconditionals="0" methods="5" coveredmethods="5"/>
-      <file name="createCategory.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/categories/createCategory.ts">
+      <file name="createCategory.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/categories/createCategory.ts">
         <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -51,7 +53,7 @@
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
-      <file name="deleteCategory.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/categories/deleteCategory.ts">
+      <file name="deleteCategory.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/categories/deleteCategory.ts">
         <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -63,7 +65,7 @@
         <line num="19" count="0" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
       </file>
-      <file name="getAllCategories.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/categories/getAllCategories.ts">
+      <file name="getAllCategories.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/categories/getAllCategories.ts">
         <metrics statements="11" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -77,7 +79,7 @@
         <line num="18" count="0" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
       </file>
-      <file name="getSingleCategory.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/categories/getSingleCategory.ts">
+      <file name="getSingleCategory.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/categories/getSingleCategory.ts">
         <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -89,7 +91,7 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/categories/index.ts">
+      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/categories/index.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -98,7 +100,7 @@
         <line num="5" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
       </file>
-      <file name="updateCategory.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/categories/updateCategory.ts">
+      <file name="updateCategory.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/categories/updateCategory.ts">
         <metrics statements="15" coveredstatements="11" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -119,7 +121,7 @@
     </package>
     <package name="server.controllers.checkout">
       <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="createOrder.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/checkout/createOrder.ts">
+      <file name="createOrder.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/checkout/createOrder.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
@@ -134,7 +136,7 @@
     </package>
     <package name="server.controllers.orderItems">
       <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="getAllOrderItems.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/orderItems/getAllOrderItems.ts">
+      <file name="getAllOrderItems.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/orderItems/getAllOrderItems.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -149,7 +151,7 @@
     </package>
     <package name="server.controllers.orders">
       <metrics statements="50" coveredstatements="15" conditionals="5" coveredconditionals="0" methods="10" coveredmethods="0"/>
-      <file name="addOrder.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/orders/addOrder.ts">
+      <file name="addOrder.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/orders/addOrder.ts">
         <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -162,7 +164,7 @@
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="deleteOrder.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/orders/deleteOrder.ts">
+      <file name="deleteOrder.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/orders/deleteOrder.ts">
         <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -175,7 +177,7 @@
         <line num="16" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
       </file>
-      <file name="getAllOrders.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/orders/getAllOrders.ts">
+      <file name="getAllOrders.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/orders/getAllOrders.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -187,7 +189,7 @@
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
       </file>
-      <file name="getSingleOrder.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/orders/getSingleOrder.ts">
+      <file name="getSingleOrder.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/orders/getSingleOrder.ts">
         <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -200,7 +202,7 @@
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="updateOrder.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/orders/updateOrder.ts">
+      <file name="updateOrder.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/orders/updateOrder.ts">
         <metrics statements="11" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -216,21 +218,21 @@
       </file>
     </package>
     <package name="server.controllers.payments">
-      <metrics statements="44" coveredstatements="22" conditionals="6" coveredconditionals="2" methods="8" coveredmethods="2"/>
-      <file name="addPayment.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/payments/addPayment.ts">
-        <metrics statements="10" coveredstatements="8" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="44" coveredstatements="22" conditionals="4" coveredconditionals="0" methods="8" coveredmethods="2"/>
+      <file name="addPayment.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/payments/addPayment.ts">
+        <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="cond" truecount="2" falsecount="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="getAllPayments.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/payments/getAllPayments.ts">
+      <file name="getAllPayments.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/payments/getAllPayments.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -242,7 +244,7 @@
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
       </file>
-      <file name="getPayment.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/payments/getPayment.ts">
+      <file name="getPayment.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/payments/getPayment.ts">
         <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -255,7 +257,7 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/payments/index.ts">
+      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/payments/index.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -263,7 +265,7 @@
         <line num="4" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
       </file>
-      <file name="removePayment.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/payments/removePayment.ts">
+      <file name="removePayment.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/payments/removePayment.ts">
         <metrics statements="10" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -278,8 +280,8 @@
       </file>
     </package>
     <package name="server.controllers.products">
-      <metrics statements="52" coveredstatements="44" conditionals="8" coveredconditionals="3" methods="10" coveredmethods="10"/>
-      <file name="addProduct.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/products/addProduct.ts">
+      <metrics statements="55" coveredstatements="46" conditionals="8" coveredconditionals="3" methods="10" coveredmethods="10"/>
+      <file name="addProduct.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/products/addProduct.ts">
         <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -292,7 +294,7 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="deleteProduct.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/products/deleteProduct.ts">
+      <file name="deleteProduct.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/products/deleteProduct.ts">
         <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -305,16 +307,19 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
-      <file name="getAllProducts.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/products/getAllProducts.ts">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="getAllProducts.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/products/getAllProducts.ts">
+        <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="cond" truecount="3" falsecount="1"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
       </file>
-      <file name="getProduct.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/products/getProduct.ts">
+      <file name="getProduct.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/products/getProduct.ts">
         <metrics statements="9" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -326,7 +331,7 @@
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/products/index.ts">
+      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/products/index.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -335,7 +340,7 @@
         <line num="5" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
       </file>
-      <file name="updateProduct.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/products/updateProduct.ts">
+      <file name="updateProduct.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/products/updateProduct.ts">
         <metrics statements="11" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -351,18 +356,8 @@
       </file>
     </package>
     <package name="server.controllers.users">
-      <metrics statements="81" coveredstatements="54" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="5"/>
-      <file name="createUser.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/createUser.ts">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-      </file>
-      <file name="deleteUser.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/deleteUser.ts">
+      <metrics statements="80" coveredstatements="59" conditionals="8" coveredconditionals="1" methods="7" coveredmethods="6"/>
+      <file name="deleteUser.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/deleteUser.ts">
         <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -375,17 +370,23 @@
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
       </file>
-      <file name="getAllusers.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/getAllusers.ts">
-        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="getAllusers.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/getAllusers.ts">
+        <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
       </file>
-      <file name="getSingleUser.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/getSingleUser.ts">
+      <file name="getSingleUser.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/getSingleUser.ts">
         <metrics statements="11" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -397,9 +398,9 @@
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
       </file>
-      <file name="googleLogIn.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/googleLogIn.ts">
+      <file name="googleLogIn.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/googleLogIn.ts">
         <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -411,8 +412,8 @@
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/index.ts">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/index.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -420,34 +421,34 @@
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+      </file>
+      <file name="logIn.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/logIn.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="17" type="stmt"/>
+        <line num="7" count="17" type="stmt"/>
+        <line num="8" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="4" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
       </file>
-      <file name="logIn.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/logIn.ts">
-        <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="signUp.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/signUp.ts">
+        <metrics statements="10" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="6" count="18" type="stmt"/>
+        <line num="7" count="18" type="stmt"/>
+        <line num="8" count="18" type="cond" truecount="0" falsecount="1"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
+        <line num="12" count="18" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
       </file>
-      <file name="signUp.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/signUp.ts">
-        <metrics statements="9" coveredstatements="3" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-      </file>
-      <file name="updateUser.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/controllers/users/updateUser.ts">
+      <file name="updateUser.ts" path="/Users/amjadshakhshir/fs16-backend/server/controllers/users/updateUser.ts">
         <metrics statements="10" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -462,20 +463,20 @@
       </file>
     </package>
     <package name="server.middlewares">
-      <metrics statements="76" coveredstatements="44" conditionals="17" coveredconditionals="6" methods="14" coveredmethods="11"/>
-      <file name="apiErrorHandler.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/apiErrorHandler.ts">
-        <metrics statements="9" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="114" coveredstatements="80" conditionals="28" coveredconditionals="17" methods="20" coveredmethods="18"/>
+      <file name="apiErrorHandler.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/apiErrorHandler.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
       </file>
-      <file name="authWithGoogle.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/authWithGoogle.ts">
+      <file name="authWithGoogle.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/authWithGoogle.ts">
         <metrics statements="14" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -492,7 +493,54 @@
         <line num="23" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
       </file>
-      <file name="controlWrapper.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/controlWrapper.ts">
+      <file name="checkAuth.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/checkAuth.ts">
+        <metrics statements="20" coveredstatements="12" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="11" count="11" type="stmt"/>
+        <line num="13" count="11" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="21" count="11" type="cond" truecount="2" falsecount="1"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="11" type="stmt"/>
+        <line num="29" count="11" type="cond" truecount="0" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="11" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+      </file>
+      <file name="checkPermissions.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/checkPermissions.ts">
+        <metrics statements="9" coveredstatements="7" conditionals="3" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="48" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="9" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+      </file>
+      <file name="checkRoles.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/checkRoles.ts">
+        <metrics statements="9" coveredstatements="7" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="48" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="9" type="cond" truecount="0" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+      </file>
+      <file name="controlWrapper.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/controlWrapper.ts">
         <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="20" type="stmt"/>
@@ -500,50 +548,50 @@
         <line num="6" count="5" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="emailChecker.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/emailChecker.ts">
+      <file name="emailChecker.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/emailChecker.ts">
         <metrics statements="8" coveredstatements="6" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="5" count="19" type="stmt"/>
+        <line num="7" count="19" type="stmt"/>
+        <line num="9" count="19" type="cond" truecount="0" falsecount="1"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="13" count="19" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
       </file>
-      <file name="logging.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/logging.ts">
-        <metrics statements="29" coveredstatements="19" conditionals="12" coveredconditionals="6" methods="3" coveredmethods="3"/>
+      <file name="logging.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/logging.ts">
+        <metrics statements="29" coveredstatements="23" conditionals="12" coveredconditionals="9" methods="3" coveredmethods="3"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
-        <line num="18" count="17" type="stmt"/>
-        <line num="19" count="17" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="17" type="stmt"/>
-        <line num="21" count="17" type="cond" truecount="2" falsecount="5"/>
-        <line num="23" count="12" type="stmt"/>
-        <line num="24" count="12" type="stmt"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="27" count="5" type="stmt"/>
+        <line num="18" count="52" type="stmt"/>
+        <line num="19" count="52" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="52" type="stmt"/>
+        <line num="21" count="52" type="cond" truecount="4" falsecount="3"/>
+        <line num="23" count="25" type="stmt"/>
+        <line num="24" count="25" type="stmt"/>
+        <line num="26" count="21" type="stmt"/>
+        <line num="27" count="21" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="43" count="17" type="stmt"/>
-        <line num="50" count="17" type="stmt"/>
-        <line num="51" count="17" type="stmt"/>
-        <line num="52" count="102" type="cond" truecount="2" falsecount="0"/>
-        <line num="56" count="17" type="cond" truecount="1" falsecount="1"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="59" count="17" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="43" count="52" type="stmt"/>
+        <line num="50" count="52" type="stmt"/>
+        <line num="51" count="52" type="stmt"/>
+        <line num="52" count="312" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="52" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="59" count="51" type="stmt"/>
         <line num="63" count="4" type="stmt"/>
-        <line num="68" count="17" type="stmt"/>
+        <line num="68" count="51" type="stmt"/>
       </file>
-      <file name="routeNotFound.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/routeNotFound.ts">
+      <file name="routeNotFound.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/routeNotFound.ts">
         <metrics statements="5" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
@@ -551,115 +599,120 @@
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="cond" truecount="0" falsecount="1"/>
       </file>
-      <file name="validate.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/validate.ts">
+      <file name="validate.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/validate.ts">
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="5" count="40" type="stmt"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="12" count="8" type="stmt"/>
+        <line num="5" count="36" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
       </file>
     </package>
     <package name="server.middlewares.errors">
-      <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="ApiError.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/middlewares/errors/ApiError.ts">
-        <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
+      <file name="ApiError.ts" path="/Users/amjadshakhshir/fs16-backend/server/middlewares/errors/ApiError.ts">
+        <metrics statements="8" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
         <line num="1" count="4" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
       </file>
     </package>
     <package name="server.models">
       <metrics statements="31" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="CategoryModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/CategoryModel.ts">
+      <file name="CategoryModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/CategoryModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="8" type="stmt"/>
         <line num="3" count="8" type="stmt"/>
         <line num="5" count="8" type="stmt"/>
         <line num="21" count="8" type="stmt"/>
       </file>
-      <file name="OrderItemModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/OrderItemModel.ts">
+      <file name="OrderItemModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/OrderItemModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="6" type="stmt"/>
         <line num="3" count="6" type="stmt"/>
         <line num="5" count="6" type="stmt"/>
         <line num="22" count="6" type="stmt"/>
       </file>
-      <file name="OrderModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/OrderModel.ts">
+      <file name="OrderModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/OrderModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="6" type="stmt"/>
         <line num="3" count="6" type="stmt"/>
         <line num="5" count="6" type="stmt"/>
         <line num="35" count="6" type="stmt"/>
       </file>
-      <file name="PaymentModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/PaymentModel.ts">
+      <file name="PaymentModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/PaymentModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="5" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
-        <line num="39" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
       </file>
-      <file name="ProductModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/ProductModel.ts">
+      <file name="ProductModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/ProductModel.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="7" type="stmt"/>
         <line num="3" count="7" type="stmt"/>
         <line num="33" count="7" type="stmt"/>
       </file>
-      <file name="RoleModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/RoleModel.ts">
+      <file name="RoleModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/RoleModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="7" type="stmt"/>
         <line num="3" count="7" type="stmt"/>
         <line num="5" count="7" type="stmt"/>
         <line num="24" count="7" type="stmt"/>
       </file>
-      <file name="ShipmentModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/ShipmentModel.ts">
+      <file name="ShipmentModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/ShipmentModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="5" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
       </file>
-      <file name="UserModel.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/models/UserModel.ts">
+      <file name="UserModel.ts" path="/Users/amjadshakhshir/fs16-backend/server/models/UserModel.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="7" type="stmt"/>
         <line num="3" count="7" type="stmt"/>
         <line num="5" count="7" type="stmt"/>
-        <line num="29" count="7" type="stmt"/>
+        <line num="38" count="7" type="stmt"/>
       </file>
     </package>
     <package name="server.routes">
-      <metrics statements="76" coveredstatements="76" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="categoriesRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/categoriesRouter.ts">
-        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="96" coveredstatements="96" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="categoriesRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/categoriesRouter.ts">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
       </file>
-      <file name="checkoutRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/checkoutRouter.ts">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="checkoutRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/checkoutRouter.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
       </file>
-      <file name="orderItemsRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/orderItemsRouter.ts">
+      <file name="orderItemsRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/orderItemsRouter.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -667,8 +720,8 @@
         <line num="7" count="4" type="stmt"/>
         <line num="9" count="4" type="stmt"/>
       </file>
-      <file name="ordersRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/ordersRouter.ts">
-        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="ordersRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/ordersRouter.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
@@ -677,71 +730,86 @@
         <line num="6" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-      </file>
-      <file name="paymentsRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/paymentsRouter.ts">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
         <line num="9" count="4" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
       </file>
-      <file name="productsRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/productsRouter.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="paymentsRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/paymentsRouter.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
         <line num="9" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
       </file>
-      <file name="usersRouter.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/routes/usersRouter.ts">
+      <file name="productsRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/productsRouter.ts">
         <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
         <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+      </file>
+      <file name="usersRouter.ts" path="/Users/amjadshakhshir/fs16-backend/server/routes/usersRouter.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
       </file>
     </package>
     <package name="server.schemas">
-      <metrics statements="40" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="3"/>
-      <file name="categorySchema.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/schemas/categorySchema.ts">
+      <metrics statements="39" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="2"/>
+      <file name="categorySchema.ts" path="/Users/amjadshakhshir/fs16-backend/server/schemas/categorySchema.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="16" count="4" type="stmt"/>
       </file>
-      <file name="orderSchema.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/schemas/orderSchema.ts">
+      <file name="orderSchema.ts" path="/Users/amjadshakhshir/fs16-backend/server/schemas/orderSchema.ts">
         <metrics statements="9" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -753,17 +821,16 @@
         <line num="19" count="0" type="stmt"/>
         <line num="25" count="4" type="stmt"/>
       </file>
-      <file name="paymentSchema.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/schemas/paymentSchema.ts">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="paymentSchema.ts" path="/Users/amjadshakhshir/fs16-backend/server/schemas/paymentSchema.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="3" count="4" type="stmt"/>
         <line num="5" count="4" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
       </file>
-      <file name="productSchema.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/schemas/productSchema.ts">
+      <file name="productSchema.ts" path="/Users/amjadshakhshir/fs16-backend/server/schemas/productSchema.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
@@ -772,31 +839,31 @@
         <line num="29" count="4" type="stmt"/>
         <line num="43" count="4" type="stmt"/>
       </file>
-      <file name="shipmentSchema.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/schemas/shipmentSchema.ts">
+      <file name="shipmentSchema.ts" path="/Users/amjadshakhshir/fs16-backend/server/schemas/shipmentSchema.ts">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
       </file>
-      <file name="userSchema.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/schemas/userSchema.ts">
+      <file name="userSchema.ts" path="/Users/amjadshakhshir/fs16-backend/server/schemas/userSchema.ts">
         <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
         <line num="38" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
       </file>
     </package>
     <package name="server.services">
-      <metrics statements="179" coveredstatements="130" conditionals="29" coveredconditionals="13" methods="59" coveredmethods="44"/>
-      <file name="categoriesService.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/services/categoriesService.ts">
+      <metrics statements="168" coveredstatements="136" conditionals="30" coveredconditionals="17" methods="55" coveredmethods="42"/>
+      <file name="categoriesService.ts" path="/Users/amjadshakhshir/fs16-backend/server/services/categoriesService.ts">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="1" count="5" type="stmt"/>
         <line num="2" count="5" type="stmt"/>
@@ -812,7 +879,7 @@
         <line num="36" count="2" type="stmt"/>
         <line num="39" count="5" type="stmt"/>
       </file>
-      <file name="ordersService.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/services/ordersService.ts">
+      <file name="ordersService.ts" path="/Users/amjadshakhshir/fs16-backend/server/services/ordersService.ts">
         <metrics statements="38" coveredstatements="30" conditionals="9" coveredconditionals="6" methods="17" coveredmethods="9"/>
         <line num="1" count="6" type="stmt"/>
         <line num="3" count="6" type="stmt"/>
@@ -821,73 +888,66 @@
         <line num="6" count="6" type="stmt"/>
         <line num="9" count="6" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
         <line num="17" count="6" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="27" count="9" type="stmt"/>
-        <line num="28" count="9" type="stmt"/>
-        <line num="29" count="9" type="stmt"/>
-        <line num="30" count="9" type="stmt"/>
-        <line num="31" count="12" type="stmt"/>
-        <line num="33" count="9" type="cond" truecount="2" falsecount="1"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="36" count="9" type="stmt"/>
-        <line num="38" count="12" type="cond" truecount="4" falsecount="2"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="9" type="stmt"/>
+        <line num="39" count="9" type="stmt"/>
+        <line num="40" count="9" type="stmt"/>
         <line num="41" count="9" type="stmt"/>
-        <line num="42" count="9" type="stmt"/>
-        <line num="44" count="9" type="stmt"/>
-        <line num="45" count="9" type="stmt"/>
-        <line num="47" count="12" type="stmt"/>
-        <line num="52" count="12" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="44" count="9" type="cond" truecount="2" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="9" type="stmt"/>
+        <line num="49" count="12" type="cond" truecount="4" falsecount="2"/>
+        <line num="52" count="9" type="stmt"/>
+        <line num="53" count="9" type="stmt"/>
         <line num="55" count="9" type="stmt"/>
-        <line num="58" count="6" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="63" count="6" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="68" count="6" type="stmt"/>
+        <line num="56" count="9" type="stmt"/>
+        <line num="58" count="12" type="stmt"/>
+        <line num="63" count="12" type="stmt"/>
+        <line num="66" count="9" type="stmt"/>
+        <line num="69" count="6" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="74" count="6" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="79" count="6" type="stmt"/>
       </file>
-      <file name="paymentsService.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/services/paymentsService.ts">
-        <metrics statements="31" coveredstatements="30" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="11"/>
+      <file name="paymentsService.ts" path="/Users/amjadshakhshir/fs16-backend/server/services/paymentsService.ts">
+        <metrics statements="24" coveredstatements="22" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8"/>
         <line num="1" count="5" type="stmt"/>
-        <line num="2" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
         <line num="6" count="5" type="stmt"/>
-        <line num="8" count="6" type="stmt"/>
-        <line num="10" count="6" type="stmt"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="12" count="6" type="cond" truecount="0" falsecount="1"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="17" count="6" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="21" count="6" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="26" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="6" type="stmt"/>
-        <line num="35" count="6" type="stmt"/>
-        <line num="39" count="6" type="stmt"/>
-        <line num="40" count="6" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="53" count="6" type="stmt"/>
-        <line num="56" count="5" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="60" count="5" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="64" count="5" type="stmt"/>
-        <line num="65" count="2" type="stmt"/>
-        <line num="67" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="21" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="51" count="5" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="57" count="5" type="stmt"/>
       </file>
-      <file name="productsService.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/services/productsService.ts">
+      <file name="productsService.ts" path="/Users/amjadshakhshir/fs16-backend/server/services/productsService.ts">
         <metrics statements="38" coveredstatements="33" conditionals="9" coveredconditionals="6" methods="12" coveredmethods="12"/>
         <line num="1" count="5" type="stmt"/>
         <line num="2" count="5" type="stmt"/>
@@ -900,103 +960,99 @@
         <line num="20" count="2" type="stmt"/>
         <line num="23" count="5" type="stmt"/>
         <line num="24" count="4" type="stmt"/>
-        <line num="27" count="5" type="stmt"/>
-        <line num="28" count="3" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="45" count="5" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="50" count="5" type="stmt"/>
-        <line num="51" count="4" type="stmt"/>
-        <line num="52" count="4" type="stmt"/>
-        <line num="53" count="4" type="stmt"/>
-        <line num="54" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
         <line num="57" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="60" count="4" type="cond" truecount="2" falsecount="2"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
+        <line num="60" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="4" type="cond" truecount="2" falsecount="2"/>
         <line num="65" count="0" type="stmt"/>
         <line num="66" count="0" type="stmt"/>
-        <line num="68" count="2" type="stmt"/>
-        <line num="69" count="2" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
         <line num="71" count="2" type="stmt"/>
         <line num="72" count="2" type="stmt"/>
-        <line num="75" count="4" type="stmt"/>
-        <line num="79" count="4" type="stmt"/>
-        <line num="82" count="5" type="stmt"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+        <line num="78" count="4" type="stmt"/>
+        <line num="82" count="4" type="stmt"/>
+        <line num="85" count="5" type="stmt"/>
       </file>
-      <file name="shipmentsService.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/services/shipmentsService.ts">
+      <file name="shipmentsService.ts" path="/Users/amjadshakhshir/fs16-backend/server/services/shipmentsService.ts">
         <metrics statements="15" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
         <line num="1" count="5" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="21" count="6" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="5" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
       </file>
-      <file name="usersService.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/services/usersService.ts">
-        <metrics statements="44" coveredstatements="18" conditionals="9" coveredconditionals="0" methods="8" coveredmethods="5"/>
+      <file name="usersService.ts" path="/Users/amjadshakhshir/fs16-backend/server/services/usersService.ts">
+        <metrics statements="40" coveredstatements="32" conditionals="10" coveredconditionals="4" methods="7" coveredmethods="6"/>
         <line num="1" count="7" type="stmt"/>
         <line num="2" count="7" type="stmt"/>
         <line num="3" count="7" type="stmt"/>
         <line num="4" count="7" type="stmt"/>
         <line num="5" count="7" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="20" count="11" type="stmt"/>
-        <line num="21" count="11" type="stmt"/>
-        <line num="22" count="11" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="23" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
         <line num="33" count="2" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="37" count="28" type="stmt"/>
+        <line num="38" count="28" type="stmt"/>
+        <line num="39" count="28" type="stmt"/>
+        <line num="40" count="28" type="stmt"/>
+        <line num="44" count="17" type="stmt"/>
+        <line num="45" count="17" type="cond" truecount="2" falsecount="1"/>
         <line num="46" count="0" type="stmt"/>
+        <line num="48" count="17" type="stmt"/>
+        <line num="49" count="17" type="cond" truecount="0" falsecount="1"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="76" count="0" type="stmt"/>
-        <line num="77" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="78" count="0" type="stmt"/>
+        <line num="52" count="17" type="stmt"/>
+        <line num="53" count="17" type="cond" truecount="1" falsecount="0"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="56" count="13" type="stmt"/>
+        <line num="65" count="13" type="stmt"/>
+        <line num="68" count="13" type="stmt"/>
+        <line num="69" count="13" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
         <line num="82" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="87" count="0" type="stmt"/>
-        <line num="90" count="7" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+        <line num="87" count="7" type="stmt"/>
       </file>
     </package>
     <package name="server.test">
       <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-      <file name="db-helper.ts" path="/Users/amjadshakhshir/fs16-backend-public/server/test/db-helper.ts">
+      <file name="db-helper.ts" path="/Users/amjadshakhshir/fs16-backend/server/test/db-helper.ts">
         <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
         <line num="1" count="9" type="stmt"/>
         <line num="2" count="9" type="stmt"/>
@@ -1014,6 +1070,30 @@
         <line num="21" count="223" type="stmt"/>
         <line num="22" count="223" type="stmt"/>
         <line num="28" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.test.auth">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="authenticateUser.ts" path="/Users/amjadshakhshir/fs16-backend/server/test/auth/authenticateUser.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="17" type="stmt"/>
+        <line num="11" count="17" type="stmt"/>
+        <line num="13" count="17" type="stmt"/>
+        <line num="20" count="17" type="stmt"/>
+        <line num="21" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="26" count="17" type="stmt"/>
+      </file>
+    </package>
+    <package name="server.utils">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="role.ts" path="/Users/amjadshakhshir/fs16-backend/server/utils/role.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="4" type="stmt"/>
       </file>
     </package>
   </project>

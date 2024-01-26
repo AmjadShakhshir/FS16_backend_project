@@ -58,15 +58,19 @@ describe("Payment service", () => {
     bodyPayment = {
       method: "paypal",
       userId: findUser._id.toString(),
-      ordersId: [order._id.toString()],
+      amount: 100,
       bankName: "OTP",
       accountNumber: "sdfdsfdsf",
       shipmentInfo: {
-        address: "new Street 1",
+        firstName: "Sirko",
+        lastName: "K",
+        street1: "new Street 1",
+        street2: "new Street 2",
         shippingPrice: 10,
         city: "Oulu",
-        postalCode: "12412",
+        zipCode: "12412",
         country: "Finland",
+        state: "Oulu",
       },
     };
   });
@@ -84,16 +88,16 @@ describe("Payment service", () => {
 
   it("should create a new payment", async () => {
     const payment = await PaymentService.createOne(bodyPayment);
-    expect(payment?.[0]?.method).toEqual("paypal");
-    expect(payment?.[0]?.bankName).toEqual("OTP");
+    expect(payment?.method).toEqual("paypal");
+    expect(payment?.bankName).toEqual("OTP");
   });
 
   it("should delete payment", async () => {
     const payment = await PaymentService.createOne(bodyPayment);
-    if (!payment?.[0]?._id) {
+    if (!payment?._id) {
       return;
     }
-    await PaymentService.removeOne(payment[0]._id.toString());
+    await PaymentService.removeOne(payment._id.toString());
     const payments = await PaymentService.findAll();
     expect(payments.length).toEqual(0);
   });
@@ -106,10 +110,10 @@ describe("Payment service", () => {
 
   it("should return one payment", async () => {
     const newPayment = await PaymentService.createOne(bodyPayment);
-    if (!newPayment?.[0]?._id) {
+    if (!newPayment?._id) {
       return;
     }
-    const payment = await PaymentService.findOne(newPayment[0]._id.toString());
+    const payment = await PaymentService.findOne(newPayment._id.toString());
     expect(payment?.bankName).toEqual("OTP");
     expect(payment?.method).toEqual("paypal");
   });

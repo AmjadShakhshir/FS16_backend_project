@@ -51,15 +51,19 @@ async function createOrderWithPayment() {
   const bodyPayment = {
     method: "paypal",
     userId: user._id.toString(),
-    ordersId: [order._id.toString()],
+    amount:100,
     bankName: "OTP",
     accountNumber: "sdfdsfdsf",
     shipmentInfo: {
-      address: "new Street 1",
+      firstName: "Sirko",
+      lastName: "K",
+      street1: "new Street 1",
+      street2: "new Street 2",
       shippingPrice: 10,
       city: "Oulu",
-      postalCode: "12412",
+      zipCode: "12412",
       country: "Finland",
+      state: "Oulu",
     },
   };
 
@@ -93,16 +97,15 @@ describe("Payment controller", () => {
       .send(bodyPayment)
       .set("Authorization", `Bearer ${accessToken.accessToken}`);
     expect(response.status).toBe(201);
-    expect(response.body.payment[0].bankName).toEqual("OTP");
+    expect(response.body.payment.bankName).toEqual("OTP");
     expect(response.body.message).toEqual("Payment is created");
-    expect(response.body.payment[0].userId).toEqual(bodyPayment?.userId);
+    expect(response.body.payment.userId).toEqual(bodyPayment?.userId);
   });
 
   it("Should delete a payment", async () => {
     const bodyPayment = await createOrderWithPayment();
     const newPayment = new PaymentRepo({
-      ...bodyPayment,
-      orderId: bodyPayment?.ordersId[0],
+      ...bodyPayment
     });
     await newPayment.save();
     console.log("-----------------", newPayment._id);
