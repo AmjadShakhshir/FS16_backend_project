@@ -14,5 +14,4 @@
       "*": ["node_modules/*", "server/types/*"]
     }
   },
-  "include": ["server/**/*", "stripe.js"]
 }
