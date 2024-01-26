@@ -1,6 +1,7 @@
 import express from "express";
 import passport from "passport";
 import cors from "cors";
+import path from "path";
 
 import productsRouter from "./routes/productsRouter";
 import categoriesRouter from "./routes/categoriesRouter";
