@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest --forceExit --coverage --detectOpenHandles --verbose false --runInBand",
     "server": "npx tsx watch ./server/server.ts",
-    "start": "nodemon dist/server/server.js"
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "nodemon --watch \"src/**\" --ext \"ts,json\" --exec \"ts-node src/index.ts\""
   },
   "keywords": [],
   "author": "",

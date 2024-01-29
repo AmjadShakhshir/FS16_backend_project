@@ -4,6 +4,5 @@ dist
 logs
 *.log
 .env
-docker-compose.yml
 coverage
 coverage/*
