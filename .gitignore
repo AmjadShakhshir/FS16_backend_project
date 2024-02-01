@@ -7,3 +7,4 @@ coverage/coverage-final.json
 coverage/lcov.info
 coverage/lcov-report/index.html
 docker-compose.yml
+build
