@@ -8,3 +8,4 @@ coverage/lcov.info
 coverage/lcov-report/index.html
 docker-compose.yml
 build
+.vercel
