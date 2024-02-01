@@ -1,6 +1,8 @@
 import express from "express";
 import passport from "passport";
 import cors from "cors";
+import mongoose from "mongoose";
+import "dotenv/config";
 
 import productsRouter from "./routes/productsRouter";
 import categoriesRouter from "./routes/categoriesRouter";
@@ -26,15 +28,24 @@ app.use(passport.initialize());
 app.use(cors());
 passport.use(authWithGoogle());
 
-app.use("/api/v1/products", loggingMiddleware, productsRouter);
-app.use("/api/v1/categories", loggingMiddleware, categoriesRouter);
-app.use("/api/v1/orders", loggingMiddleware, ordersRouter);
-app.use("/api/v1/users", loggingMiddleware, usersRouter);
-app.use("/api/v1/checkout", loggingMiddleware, checkoutRouter);
-app.use("/api/v1/items", loggingMiddleware, orderItemsRouter);
-app.use("/api/v1/payments", loggingMiddleware, paymentsRouter);
+app.use("/products", loggingMiddleware, productsRouter);
+app.use("/categories", loggingMiddleware, categoriesRouter);
+app.use("/orders", loggingMiddleware, ordersRouter);
+app.use("/users", loggingMiddleware, usersRouter);
+app.use("/checkout", loggingMiddleware, checkoutRouter);
+app.use("/items", loggingMiddleware, orderItemsRouter);
+app.use("/payments", loggingMiddleware, paymentsRouter);
 
 app.use(apiErrorHandler);
 app.use(routeNotFound);
+
+const port = process.env.PORT || 5000;
+
+const mongoURL = process.env.DB_URL_COMMON as string;
+mongoose.connect(mongoURL).then(() => console.log("Connected!"));
+
+app.listen(port, () => {
+    console.log(`👀 Server is running on localhost:${port}`);
+});
 
 export default app
