@@ -8,7 +8,8 @@
     "server": "npx tsx watch ./server/server.ts",
     "build": "tsc",
     "start": "node build/server/server.js",
-    "dev": "nodemon --watch server/server.ts"
+    "dev": "nodemon --watch server/server.ts",
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",
