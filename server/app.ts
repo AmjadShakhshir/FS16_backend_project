@@ -1,7 +1,6 @@
 import express from "express";
 import passport from "passport";
 import cors from "cors";
-import path from "path";
 
 import productsRouter from "./routes/productsRouter";
 import categoriesRouter from "./routes/categoriesRouter";
@@ -37,12 +36,5 @@ app.use("/payments", loggingMiddleware, paymentsRouter);
 
 app.use(apiErrorHandler);
 app.use(routeNotFound);
-
-// if (process.env.NODE_ENV === "production") {
-//     app.get("*", (req, res) => {
-//         app.use(express.static(path.join(__dirname, "frontend", "build")));
-//         res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
-//     });
-// }
 
 export default app
