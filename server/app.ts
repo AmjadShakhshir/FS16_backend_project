@@ -26,13 +26,13 @@ app.use(passport.initialize());
 app.use(cors());
 passport.use(authWithGoogle());
 
-app.use("/api/v1/products", loggingMiddleware, productsRouter);
-app.use("/api/v1/categories", loggingMiddleware, categoriesRouter);
-app.use("/api/v1/orders", loggingMiddleware, ordersRouter);
-app.use("/api/v1/users", loggingMiddleware, usersRouter);
-app.use("/api/v1/checkout", loggingMiddleware, checkoutRouter);
-app.use("/api/v1/items", loggingMiddleware, orderItemsRouter);
-app.use("/api/v1/payments", loggingMiddleware, paymentsRouter);
+app.use("/products", loggingMiddleware, productsRouter);
+app.use("/categories", loggingMiddleware, categoriesRouter);
+app.use("/orders", loggingMiddleware, ordersRouter);
+app.use("/users", loggingMiddleware, usersRouter);
+app.use("/checkout", loggingMiddleware, checkoutRouter);
+app.use("/items", loggingMiddleware, orderItemsRouter);
+app.use("/payments", loggingMiddleware, paymentsRouter);
 
 app.use(apiErrorHandler);
 app.use(routeNotFound);
