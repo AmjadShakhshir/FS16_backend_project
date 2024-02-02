@@ -39,13 +39,4 @@ app.use("/payments", loggingMiddleware, paymentsRouter);
 app.use(apiErrorHandler);
 app.use(routeNotFound);
 
-const port = process.env.PORT || 5000;
-
-const mongoURL = process.env.DB_URL_COMMON as string;
-mongoose.connect(mongoURL).then(() => console.log("Connected!"));
-
-app.listen(port, () => {
-    console.log(`👀 Server is running on localhost:${port}`);
-});
-
 export default app
