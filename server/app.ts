@@ -17,6 +17,7 @@ import { routeNotFound } from "./middlewares/routeNotFound";
 import { authWithGoogle } from "./middlewares/authWithGoogle";
 
 const app = express();
+app.use(cors({ origin: 'https://fs16-front-end-fs-two.vercel.app' }));
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     next();
@@ -25,7 +26,6 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(passport.initialize());
-app.use(cors());
 passport.use(authWithGoogle());
 
 app.use("/products", loggingMiddleware, productsRouter);

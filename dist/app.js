@@ -19,6 +19,7 @@ const apiErrorHandler_1 = require("./middlewares/apiErrorHandler");
 const routeNotFound_1 = require("./middlewares/routeNotFound");
 const authWithGoogle_1 = require("./middlewares/authWithGoogle");
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)({ origin: 'https://fs16-front-end-fs-two.vercel.app' }));
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     next();
@@ -26,7 +27,6 @@ app.use((req, res, next) => {
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use(passport_1.default.initialize());
-app.use((0, cors_1.default)());
 passport_1.default.use((0, authWithGoogle_1.authWithGoogle)());
 app.use("/products", logging_1.loggingMiddleware, productsRouter_1.default);
 app.use("/categories", logging_1.loggingMiddleware, categoriesRouter_1.default);
