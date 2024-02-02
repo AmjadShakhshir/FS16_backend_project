@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --forceExit --coverage --detectOpenHandles --verbose false --runInBand",
-    "server": "npx tsx watch ./server/server.ts",
-    "build": "tsc",
-    "start": "nodemon server/server.js",
-    "dev": "nodemon --watch server/server.ts"
+    "start": "nodemon src/index.ts",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist"
   },
   "keywords": [],
   "author": "",
@@ -41,8 +41,15 @@
     "@types/supertest": "^2.0.16",
     "jest": "^29.7.0",
     "mongodb-memory-server": "^9.1.1",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^5.0.5",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.1",
     "tsx": "^3.14.0"
-  }
+  },
+  "pre-commit": [
+      "ts.check",
+      "build",
+      "add-build"
+  ]
 }

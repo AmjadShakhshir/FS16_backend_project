@@ -1,0 +1,41 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const passport_1 = __importDefault(require("passport"));
+const cors_1 = __importDefault(require("cors"));
+require("dotenv/config");
+const productsRouter_1 = __importDefault(require("./routes/productsRouter"));
+const categoriesRouter_1 = __importDefault(require("./routes/categoriesRouter"));
+const ordersRouter_1 = __importDefault(require("./routes/ordersRouter"));
+const usersRouter_1 = __importDefault(require("./routes/usersRouter"));
+const checkoutRouter_1 = __importDefault(require("./routes/checkoutRouter"));
+const orderItemsRouter_1 = __importDefault(require("./routes/orderItemsRouter"));
+const paymentsRouter_1 = __importDefault(require("./routes/paymentsRouter"));
+const logging_1 = require("./middlewares/logging");
+const apiErrorHandler_1 = require("./middlewares/apiErrorHandler");
+const routeNotFound_1 = require("./middlewares/routeNotFound");
+const authWithGoogle_1 = require("./middlewares/authWithGoogle");
+const app = (0, express_1.default)();
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+});
+app.use(express_1.default.json());
+app.use(express_1.default.urlencoded({ extended: true }));
+app.use(passport_1.default.initialize());
+app.use((0, cors_1.default)());
+passport_1.default.use((0, authWithGoogle_1.authWithGoogle)());
+app.use("/products", logging_1.loggingMiddleware, productsRouter_1.default);
+app.use("/categories", logging_1.loggingMiddleware, categoriesRouter_1.default);
+app.use("/orders", logging_1.loggingMiddleware, ordersRouter_1.default);
+app.use("/users", logging_1.loggingMiddleware, usersRouter_1.default);
+app.use("/checkout", logging_1.loggingMiddleware, checkoutRouter_1.default);
+app.use("/items", logging_1.loggingMiddleware, orderItemsRouter_1.default);
+app.use("/payments", logging_1.loggingMiddleware, paymentsRouter_1.default);
+app.use(apiErrorHandler_1.apiErrorHandler);
+app.use(routeNotFound_1.routeNotFound);
+exports.default = app;
+//# sourceMappingURL=app.js.map
