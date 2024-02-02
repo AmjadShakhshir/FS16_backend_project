@@ -4,17 +4,17 @@ import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config";
 
-import productsRouter from "./server/routes/productsRouter";
-import categoriesRouter from "./server/routes/categoriesRouter";
-import ordersRouter from "./server/routes/ordersRouter";
-import usersRouter from "./server/routes/usersRouter";
-import checkoutRouter from "./server/routes/checkoutRouter";
-import orderItemsRouter from "./server/routes/orderItemsRouter";
-import paymentsRouter from "./server/routes/paymentsRouter";
-import { loggingMiddleware } from "./server/middlewares/logging";
-import { apiErrorHandler } from "./server/middlewares/apiErrorHandler";
-import { routeNotFound } from "./server/middlewares/routeNotFound";
-import { authWithGoogle } from "./server/middlewares/authWithGoogle";
+import productsRouter from "./routes/productsRouter";
+import categoriesRouter from "./routes/categoriesRouter";
+import ordersRouter from "./routes/ordersRouter";
+import usersRouter from "./routes/usersRouter";
+import checkoutRouter from "./routes/checkoutRouter";
+import orderItemsRouter from "./routes/orderItemsRouter";
+import paymentsRouter from "./routes/paymentsRouter";
+import { loggingMiddleware } from "./middlewares/logging";
+import { apiErrorHandler } from "./middlewares/apiErrorHandler";
+import { routeNotFound } from "./middlewares/routeNotFound";
+import { authWithGoogle } from "./middlewares/authWithGoogle";
 
 const app = express();
 app.use((req, res, next) => {
